@@ -34,6 +34,10 @@ project {
 
 object Ac : BuildType({
     name = "ac"
+
+    vcs {
+        root(HttpsGithubComChubatovaTigerChubatovaGradleTestsBackup)
+    }
 })
 
 object HttpsGithubComChubatovaTigerChubatovaGradleTestsBackup : GitVcsRoot({
