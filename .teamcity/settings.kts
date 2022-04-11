@@ -40,8 +40,8 @@ object Ac : BuildType({
 
     maxRunningBuilds = 3
     maxRunningBuildsPerBranch = """
-        pull/* 1
-        * 0
+        %defaultMask%
+        pull/%pullMask%
     """.trimIndent()
 
     params {
