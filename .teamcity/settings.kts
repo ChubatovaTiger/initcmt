@@ -1,4 +1,6 @@
 import jetbrains.buildServer.configs.kotlin.*
+import jetbrains.buildServer.configs.kotlin.buildFeatures.PullRequests
+import jetbrains.buildServer.configs.kotlin.buildFeatures.pullRequests
 import jetbrains.buildServer.configs.kotlin.buildSteps.script
 import jetbrains.buildServer.configs.kotlin.vcs.GitVcsRoot
 
@@ -49,6 +51,17 @@ object Ac : BuildType({
     steps {
         script {
             scriptContent = "sleep 100"
+        }
+    }
+
+    features {
+        pullRequests {
+            provider = github {
+                authType = token {
+                    token = "credentialsJSON:d674df64-6be8-409d-b5c0-99e908571ff4"
+                }
+                filterAuthorRole = PullRequests.GitHubRoleFilter.MEMBER
+            }
         }
     }
 })
