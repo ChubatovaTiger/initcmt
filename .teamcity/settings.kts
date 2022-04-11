@@ -44,6 +44,10 @@ object Ac : BuildType({
         * 0
     """.trimIndent()
 
+    params {
+        param("defaultMask", "* 0")
+    }
+
     vcs {
         root(HttpsGithubComChubatovaTigerChubatovaGradleTestsBackup)
     }
