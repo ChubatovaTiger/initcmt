@@ -37,7 +37,10 @@ object Ac : BuildType({
     name = "ac"
 
     maxRunningBuilds = 3
-    maximumNumberOfBuildsPerBranch = "<default> 1"
+    maximumNumberOfBuildsPerBranch = """
+        split 1
+        split11 1
+    """.trimIndent()
 
     vcs {
         root(HttpsGithubComChubatovaTigerChubatovaGradleTestsBackup)
