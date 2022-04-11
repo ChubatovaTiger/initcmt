@@ -28,7 +28,13 @@ version = "2021.2"
 project {
 
     vcsRoot(HttpsGithubComChubatovaTigerChubatovaGradleTestsBackup)
+
+    buildType(Ac)
 }
+
+object Ac : BuildType({
+    name = "ac"
+})
 
 object HttpsGithubComChubatovaTigerChubatovaGradleTestsBackup : GitVcsRoot({
     name = "https://github.com/ChubatovaTiger/ChubatovaGradleTestsBackup"
