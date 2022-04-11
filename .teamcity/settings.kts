@@ -1,4 +1,5 @@
 import jetbrains.buildServer.configs.kotlin.v2019_2.*
+import jetbrains.buildServer.configs.kotlin.v2019_2.vcs.GitVcsRoot
 
 /*
 The settings script is an entry point for defining a TeamCity
@@ -25,4 +26,12 @@ To debug in IntelliJ Idea, open the 'Maven Projects' tool window (View
 version = "2021.2"
 
 project {
+
+    vcsRoot(HttpsGithubComChubatovaTigerChubatovaGradleTestsBackup)
 }
+
+object HttpsGithubComChubatovaTigerChubatovaGradleTestsBackup : GitVcsRoot({
+    name = "https://github.com/ChubatovaTiger/ChubatovaGradleTestsBackup"
+    url = "https://github.com/ChubatovaTiger/ChubatovaGradleTestsBackup"
+    branch = "refs/heads/master"
+})
