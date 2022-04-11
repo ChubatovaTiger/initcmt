@@ -36,6 +36,8 @@ project {
 object Ac : BuildType({
     name = "ac"
 
+    maxRunningBuilds = 3
+
     vcs {
         root(HttpsGithubComChubatovaTigerChubatovaGradleTestsBackup)
     }
