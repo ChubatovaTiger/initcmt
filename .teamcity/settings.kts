@@ -40,8 +40,8 @@ object Ac : BuildType({
 
     maxRunningBuilds = 3
     maxRunningBuildsPerBranch = """
-        * 0
         pull/* 1
+        * 0
     """.trimIndent()
 
     vcs {
