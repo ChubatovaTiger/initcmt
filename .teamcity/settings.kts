@@ -45,7 +45,7 @@ object Ac : BuildType({
     """.trimIndent()
 
     params {
-        param("defaultMask", "0")
+        param("defaultMask", "1")
         param("pullMask", "1")
     }
 
