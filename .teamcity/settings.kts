@@ -46,7 +46,7 @@ object Ac : BuildType({
 
     params {
         param("defaultMask", "1")
-        param("pullMask", "1")
+        param("pullMask", "2")
     }
 
     vcs {
